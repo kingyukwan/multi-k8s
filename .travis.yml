@@ -18,7 +18,7 @@ before_intall:
   - docker build -t stephengrider/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run stenphengrider/react-test npm run test -- --coverage
+  - docker run stephengrider/react-test npm run test -- --coverage
 
 deploy:
   provider: script
